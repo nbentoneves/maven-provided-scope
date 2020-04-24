@@ -10,12 +10,12 @@ This project shows how can you work with maven provided dependencies. You can ch
 
 # Results
 
-| Utils - Guava Scope | Service - Guava Dependency | Result                                             | Dependency Tree                               |
-|---------------------|----------------------------|----------------------------------------------------|-----------------------------------------------|
-| provided - 29.0-jr  | yes - 22.0                 | :white_check_mark:                                 | Transitive guava - No                         |
+| Utils - Guava Scope                           | Service - Guava Dependency | Result                                             | Dependency Tree                               |
+|:-------------------------------------------------:|:------------:|:--------------:|:-----------------:|
+| provided - 29.0-jr                              | yes - 22.0                 | :white_check_mark:                                 | Transitive guava - No                         |
 | compile - 29.0-jr   | no                         | :white_check_mark:                                 | Transitive guava - Yes                        |
 | compile - 29.0-jr   | yes - 22.0                 | :white_check_mark:                                 | Transitive guava - Yes (but use 22.0 version) |
-| compile - 29.0-jr   | no                         | :no_entry_sign: - java.lang.ClassNotFoundException | Transitive guava - No                         |
+| compile - 29.0-jr   | no                         | :no_entry_sign: java.lang.ClassNotFoundException | Transitive guava - No                         |
 
 # Help
 
